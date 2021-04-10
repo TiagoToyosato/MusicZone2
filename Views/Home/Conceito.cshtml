@@ -1,0 +1,17 @@
+﻿@model ConceitoViewModel
+@{
+    ViewData["Title"] = "Conceito";
+}
+
+<div class="row">
+    <div class="col">
+        <h2>O conceito:</h2>
+        <p>A música está sempre conosco. Seja qual for a situação, a solução passa sempre por ouvir um bom som. Ou, claro, fazer um bom som.</p>
+        <p>Utilize esta aplicação para guardar as bandas que já ouviu.</p>
+        <p>Bandas Pop registreadas: @Model.BandasPop</p>
+        <p>Total bandas registradas: @Model.TotalBandas</p>
+    </div>
+    <div class="col">
+        <img src="~/images/DVD_Mamonas_Arquivo_Familiar.jpg" alt="Mamonas assassinas" />
+    </div>
+</div>

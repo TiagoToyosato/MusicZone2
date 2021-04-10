@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Banda confirmada";
+}
+@model Banda
+
+<h2>Foi adicionada a seguinte banda:</h2>
+<ul>
+    <li>Nome: @Model.Nome</li>
+    <li>Número de elementos: @Model.Elementos</li>
+    <li>Gênero: @Model.Genero</li>
+    <li>TOP: @Model.TOP</li>
+</ul>
+
+<a asp-action="AddBanda" class="btn btn-success">Adicionar outra banda</a>
+<a asp-action="Index" class="btn btn-primary">Voltar ás bandas</a>

@@ -1,0 +1,36 @@
+﻿@model Banda
+@{
+    ViewData["Title"] = "Adicionar Banda";
+}
+
+<form asp-action="AddBanda" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <label asp-for="Nome">Nome da banda:</label>
+    <div class="col-5">
+        <input asp-for="Nome" type="text" class="form-control" />
+    </div>
+
+    <label asp-for="Elementos">Número de elementos:</label>
+    <div class="col-5">
+        <input asp-for="Elementos" type="number" class="form-control" />
+    </div>
+
+    <label asp-for="Genero">Gênero:</label>
+    <div class="col-5">
+        <select asp-for="Genero" class="form-control">
+            <option value="Pop" selected>Pop</option>
+            <option value="Alternativa">Alternativa</option>
+            <option value="Rock">Rock</option>
+            <option value="Metal">Metal</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+        </select>
+    </div>
+
+    <label asp-for="TOP">Banda TOP</label>
+    <div class="col-5">
+        <input asp-for="TOP" type="checkbox" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Criar banda</button>
+</form>
